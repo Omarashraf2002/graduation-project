@@ -3,17 +3,24 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
-          <img src="../Imgs/الزهراء لوجو.png" alt="" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Brand href="#home">HELWAN LOGO</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            <Link to={"/AppDate"}> مواعيد التقدم للمدن الجامعية</Link>
+            <Nav.Link href="#link">تقديم طلب التحاق بالمدينة الجامعية</Nav.Link>
+            <Link to={"/InquiryAboutAdmission"}>
+              {" "}
+              الإستعلام عن القبول في المدينة الجامعية
+            </Link>
+
+            <Nav.Link href="#link">إرشادات التقدم والإقرارات</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
