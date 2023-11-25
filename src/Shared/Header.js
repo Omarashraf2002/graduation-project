@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
-import "../Style/Header.css";
+
 const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -25,7 +25,8 @@ const Header = () => {
               الإستعلام عن القبول في المدينة الجامعية
             </Link>
 
-            <Nav.Link href="#link">إرشادات التقدم والإقرارات</Nav.Link>
+            <Link to={"/AppForm"}> تقديم طلب التحاقللمدن الجامعية</Link>
+
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

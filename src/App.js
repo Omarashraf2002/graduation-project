@@ -3,8 +3,9 @@ import "./App.css";
 import ApplicationDates from "./Pages/ApplicationDates";
 import Header from "./Shared/Header";
 import InquiryAboutAdmission from "./Pages/InquiryAboutAdmission";
+
 import Login from "./Authentication/Login";
-import SubmitApplication from "./Pages/SubmitApplication";
+
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
           element={<InquiryAboutAdmission />}
         />
         <Route path="AppDate" element={<ApplicationDates />} />
-        <Route path="SubmitApplication" element={<SubmitApplication />} />
+
+        <Route path="AppForm" element={<ApplicationForm />} />
+
+
       </Routes>
     </div>
   );
