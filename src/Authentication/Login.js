@@ -1,6 +1,8 @@
 import background from "../Images/1.webp";
 import React, { Component } from "react";
 import { TextField, Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
 
 class App extends Component {
   render() {
@@ -72,7 +74,7 @@ class App extends Component {
                 تسجيل الدخول
               </Button>
               <div>
-                <p style={{ fontSize: "16px" }}>التقدم للمدن الجامعية</p>
+              <Link to="/AppForm" style={{ fontSize: "16px" }}>التقدم للمدن الجامعية</Link>
               </div>
             </div>
           </div>
