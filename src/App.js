@@ -3,6 +3,7 @@ import "./App.css";
 import ApplicationDates from "./Pages/ApplicationDates";
 import Header from "./Shared/Header";
 import InquiryAboutAdmission from "./Pages/InquiryAboutAdmission";
+import ApplicationForm from "./Pages/ApplicationForm";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           element={<InquiryAboutAdmission />}
         />
         <Route path="AppDate" element={<ApplicationDates />} />
+        <Route path="AppForm" element={<ApplicationForm />} />
+
       </Routes>
     </div>
   );
