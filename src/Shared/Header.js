@@ -9,12 +9,17 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">HELWAN LOGO</Navbar.Brand>
+        <div className="logo">
+          <img src="../Imgs/helwan logo.jpg" />
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Link to={"/AppDate"}> مواعيد التقدم للمدن الجامعية</Link>
-            <Nav.Link href="#link">تقديم طلب التحاق بالمدينة الجامعية</Nav.Link>
+            <Link to={"/SubmitApplication"}>
+              تقديم طلب التحاق بالمدينة الجامعية
+            </Link>
+
             <Link to={"/InquiryAboutAdmission"}>
               {" "}
               الإستعلام عن القبول في المدينة الجامعية
