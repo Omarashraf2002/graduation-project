@@ -10,6 +10,8 @@ const App = () => {
   const [checkbox4Checked, setCheckbox4Checked] = useState(false);
   const [checkbox5Checked, setCheckbox5Checked] = useState(false);
   const [checkbox6Checked, setCheckbox6Checked] = useState(false);
+
+  const [checkbox7Checked, setCheckbox7Checked] = useState(false);
   const [dropdownValue5, setDropdown5Value] = useState("");
   const [dropdownValue2, setDropdown2Value] = useState("");  
   const [dropdownValue, setDropdownValue] = useState("");
@@ -43,6 +45,9 @@ const App = () => {
   };
   const handleCheckbox6Change = () => {
     setCheckbox6Checked(!checkbox6Checked);
+  };
+  const handleCheckbox7Change = () => {
+    setCheckbox7Checked(!checkbox7Checked);
   };
   const handleDropdown5Change = (event) => {
     setDropdown5Value(event.target.value);
@@ -512,7 +517,7 @@ const App = () => {
       </div>
       
     </div>}
-    <div style={{textAlign:"right" , backgroundColor:"yellow",border:"solid 1px" ,margin:"auto", padding:"30px" ,borderRadius: "25px",width:"auto"}}>
+    <div style={{textAlign:"right" , backgroundColor:"#FFEBA4",border:"solid 1px" ,margin:"auto", padding:"30px" ,borderRadius: "25px",width:"auto"}}>
       <h5>ملحوظات هامة</h5>
       <ul>
         <li>التقدم للمدن الجامعية من خلال استمارة التقديم الالكترونى مجانى بالكامل</li>
@@ -526,8 +531,8 @@ const App = () => {
        <Checkbox 
        required
           label="أقر بأن البيانات (محل الإقامة - التقدير - الفرقة/الكلية) صحيحة طبقاً للأوراق الرسمية على أن أقدم هذه الأوراق عند حضوري للمدينة في حالة القبول وإذا ثبت أي خطأ في البيانات يتم تحويلي للشئون القانونية وفصلي نهائياً من المدينة"
-          checked={checkbox5Checked}
-          onChange={handleCheckbox5Change}
+          checked={checkbox7Checked}
+          onChange={handleCheckbox7Change}
           />
        </div>
 
