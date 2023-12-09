@@ -328,7 +328,6 @@ const [policy, setPolicy] = useState(false);
   // setOldExpartriates(false);
   // setNewEgyption(false);
   // setNewExpartriates(false);
-   // setNewEgyption(false);
       if (  // Add more conditions for other required fields
       ! nationalID||
     !studentCode||

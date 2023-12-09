@@ -59,5 +59,4 @@ const handleSubmit = async (event) => {
   );
 };
 
-
 export default InquiryAboutAdmission;

@@ -19,8 +19,7 @@ const ApplicationDates = () => {
       console.log(response);
       setTabs(response.data.data.date);
             
-      
-
+    
     } catch (error) {
       console.log("1010");
 
