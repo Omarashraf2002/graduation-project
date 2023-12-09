@@ -328,6 +328,7 @@ const [policy, setPolicy] = useState(false);
   // setOldExpartriates(false);
   // setNewEgyption(false);
   // setNewExpartriates(false);
+   // setNewEgyption(false);
       if (  // Add more conditions for other required fields
       ! nationalID||
     !studentCode||
@@ -335,7 +336,6 @@ const [policy, setPolicy] = useState(false);
     !birthDate||
    ! placeOfBirth||
    !policy ||
-
    ! detailedAddress||
     !email||
     !landLinePhone||
